@@ -1,5 +1,6 @@
 
-by Erik Horus
+by **[Erik Horus](https://github.com/ErikHorus1249)**
+
 date : 03/05/2020
 
 # The Alloy Analyzer

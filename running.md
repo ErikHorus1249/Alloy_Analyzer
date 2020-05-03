@@ -23,7 +23,7 @@ Nếu bạn sử dụng Macbook thì chỉ cần double-click vào file **dmg** 
         >
         `$ sudo apt install openjdk-8-jdk openjdk-8-jre`
         >
-         `$  java -jar alloy4.2.jar`
+        `$  java -jar alloy4.2.jar`
 
 
          

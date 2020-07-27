@@ -1,0 +1,26 @@
+abstract sig classification{}
+one sig classified extends classification{}
+one sig unclassified extends classification{}
+
+sig user{level : one classification, r,w : set object}
+one sig user1, user2 extends user{}
+
+sig object{sec : one classification}
+one sig object1, object2 extends object{}
+
+fact policy1 {no((classified.~sec).~r & unclassified.~level)}
+fact policy2 {no((unclassified.~sec).~w & classified.~level)}
+
+pred show(){
+	user1.level = classified
+	user2.level = unclassified
+	some user1.r
+	some user1.w
+	some user2.r
+	some user2.w
+	object1.sec = classified
+	object2.sec = unclassified
+	object1 in user2.w
+}
+
+run show
